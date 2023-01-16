@@ -10,9 +10,9 @@
 
 /*
 argc: argument count. 함수가 받는 인자의 갯수
-프로그램을 실행할 때 지정해 준 "명령행 옵션"의 "개수"가 저장되는 곳
+	  프로그램을 실행할 때 지정해 준 "명령행 옵션"의 "개수"가 저장되는 곳
 argv[]: argument vector. 인자의 모음. argv[0] = 실행 파일의 경로 및 이름
-프로그램을 실행할 때 지정해 준 "명령행 옵션의 문자열들"이 실제로 저장되는 배열
+		프로그램을 실행할 때 지정해 준 "명령행 옵션의 문자열들"이 실제로 저장되는 배열
 
 strtok: 문자열 분리. 첫 번째 인자가 NULL일 경우 해당 문자열에서 구분자 다음부터 탐색하여 분리
 strcmp: 문자열 비교. 두 문자열이 같을 경우 0을 반환
@@ -36,7 +36,7 @@ int main(int argc, char* argv[]) {
 	char *token;			// 파싱한 문자를 받는 pointer
 
 	char fstTag[17][32] =	// Startup.cfg File의 정의 목록 중 1st Tag
-	{ "SYSTEM",
+	{	"SYSTEM",
 		"INFORMATION_SAVE",
 		"MESSAGE_SAVE",
 		"EVENT_SAVE",
